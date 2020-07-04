@@ -1,6 +1,6 @@
-# Pillow Image Processing Demo
+# Meme Masher
 
-A demo on simple image processing in Python, including sample input and output.
+Mashes memes. Wouldn't have been possible without [PillowImageProcessingDemo](https://github.com/nspilman/PillowImageProcessingDemo)
 
 ## Requirements
 - Python 3.7
@@ -12,7 +12,7 @@ Inside the repo directory...
 
 ```bash
 pip install --upgrade pip # If pip wasn't freshly installed
-pip install pillow numpy
+pip install pillow numpy progressbar2
 ```
 
 ## Usage
@@ -22,5 +22,8 @@ python main.py
 ```
 
 ## Contributing
-Do what thou wilt shall be the whole of the law.
-# meme-masher
+
+Send memes
+
+
+![Sample Output](/sampleOutput/spongeZuck.png?raw=true "Sample Output")
