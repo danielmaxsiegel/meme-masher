@@ -1,6 +1,6 @@
 # Meme Masher
 
-Mashes memes. Wouldn't have been possible without [PillowImageProcessingDemo](https://github.com/nspilman/PillowImageProcessingDemo)
+Mashes memes. Wouldn't have been possible without [PillowImageProcessingDemo](https://github.com/nspilman/PillowImageProcessingDemo) by [nspilman](https://github.com/nspilman).
 
 ## Requirements
 - Python 3.7

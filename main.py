@@ -13,10 +13,6 @@ images = [Image.open(f"./images/{filename}") for filename in image_files]
 box = (0, 0, 700, 700)
 cropped_images = [resize(image,700).crop(box) for image in images]
 
-### convert first image to np Array
-# image_array = np.array(cropped_images[0])
-# nparray_to_image(image_array).show()
-#
 # # new_image_array = modified_image_array(np.array(cropped_images[0]), turn_white_things_yellow)
 # new_image_array = modified_image_array(np.array(cropped_images[0]))
 # nparray_to_image(new_image_array).show()
