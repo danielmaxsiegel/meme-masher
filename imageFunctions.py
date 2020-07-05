@@ -54,3 +54,15 @@ def turn_white_things_yellow(pixel):
         return [255,255,0]
     else:
         return pixel
+
+
+
+
+# Usage
+### convert first image to np Array
+# image_array = np.array(cropped_images[0])
+# nparray_to_image(image_array).show()
+#
+# # new_image_array = modified_image_array(np.array(cropped_images[0]), turn_white_things_yellow)
+# new_image_array = modified_image_array(np.array(cropped_images[0]))
+# nparray_to_image(new_image_array).show()
