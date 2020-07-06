@@ -1,2 +1,6 @@
 *.DS_Store
 output/*
+
+images/*
+!images/spongebob.jpeg
+!images/kronk.jpg
