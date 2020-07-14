@@ -1,4 +1,7 @@
 *.DS_Store
+
+keys.py
+
 output/*
 
 images/*
