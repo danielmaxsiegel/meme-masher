@@ -2,8 +2,12 @@ from PIL import Image
 import numpy as np
 import progressbar
 import os, random
+from TwitterAPI import TwitterAPI
 from imageFunctions import *
 from keys import *
+
+if (twitter_api_key is not ''):
+      api = TwitterAPI(twitter_api_key, twitter_api_secret, twitter_access_token, twitter_access_token_secret)
 
 ### Grab two images from the images directory
 image_files = random.sample(os.listdir('./images'), 2)
@@ -37,7 +41,17 @@ with progressbar.ProgressBar(max_value=len(image_one)) as bar:
 
 new_image = nparray_to_image(new_image)
 
-new_image.show()
-
 ### Save images to file
 new_image.save(f"./output/output.jpg")
+
+## Try to tweet the image
+if (twitter_api_key is not ''):
+    try:
+        file = open("./output/output.jpg", 'rb')
+        data = file.read()
+
+        r = api.request('statuses/update_with_media', {'status':' and '.join(image_files)}, {'media[]':data})
+    except UnicodeDecodeError:
+        print("there was an issue")
+else:
+    new_image.show()
