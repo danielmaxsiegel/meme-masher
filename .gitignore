@@ -6,5 +6,5 @@ __pycache__/*
 output/*
 
 images/*
-!images/spongebob.jpeg
+!images/greasybob.jpeg
 !images/kronk.jpg
