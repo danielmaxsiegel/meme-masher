@@ -3,6 +3,7 @@ import numpy as np
 import progressbar
 import os, random
 from imageFunctions import *
+from keys import *
 
 ### Grab two images from the images directory
 image_files = random.sample(os.listdir('./images'), 2)
